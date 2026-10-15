@@ -1,0 +1,265 @@
+/* ============================================================
+   style.css — Riverton Community Bike Workshop
+   Assessment 2: basic external CSS only.
+   Intentionally NO Flexbox, Grid, media queries or advanced
+   layout CSS — those belong to Assessment 3.
+   ============================================================ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f4f1ea;
+  color: #2b2b26;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+/* ---- Skip link (accessibility) ---- */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  background: #14512f;
+  color: #ffffff;
+  padding: 0.4em 0.9em;
+}
+.skip-link:focus {
+  left: 8px;
+  top: 8px;
+  z-index: 10;
+}
+
+/* ---- Header and navigation ---- */
+header {
+  background: #1f6f43;
+  padding: 1.2em 1em 1em;
+  text-align: center;
+}
+.brand {
+  margin: 0;
+}
+.brand a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+nav {
+  margin-top: 0.9em;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  display: inline-block;
+  margin: 0 0.35em;
+}
+nav a {
+  display: inline-block;
+  padding: 0.35em 0.9em;
+  border-radius: 4px;
+  color: #eaf4ee;
+  text-decoration: none;
+}
+nav a:hover,
+nav a:focus {
+  background: #2f8a58;
+  color: #ffffff;
+}
+nav a[aria-current="page"] {
+  background: #ffffff;
+  color: #14512f;
+  font-weight: bold;
+}
+
+/* ---- Main content ---- */
+main {
+  max-width: 940px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 1.4em 1.6em 2.6em;
+}
+h1 {
+  color: #14512f;
+  font-size: 1.9em;
+  margin: 0.3em 0 0.4em;
+}
+h2 {
+  color: #1f6f43;
+  margin: 1.8em 0 0.5em;
+  padding-bottom: 0.15em;
+  border-bottom: 2px solid #e4ded1;
+}
+h3 {
+  color: #3c3c34;
+  margin: 1.3em 0 0.4em;
+}
+.lead {
+  font-size: 1.08em;
+  color: #565650;
+}
+.onpage {
+  background: #f4f1ea;
+  border-radius: 6px;
+  padding: 0.6em 0.9em;
+}
+
+/* ---- Links ---- */
+a {
+  color: #1c6b3f;
+}
+a:hover {
+  color: #14512f;
+}
+
+/* ---- Figures and images ---- */
+figure {
+  margin: 1.3em 0;
+}
+figure img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  border: 1px solid #ddd5c4;
+}
+figcaption {
+  font-size: 0.9em;
+  color: #6a6a5f;
+  font-style: italic;
+  margin-top: 0.45em;
+}
+
+/* ---- Lists ---- */
+ul,
+ol {
+  padding-left: 1.4em;
+}
+li {
+  margin: 0.25em 0;
+}
+
+/* ---- Tables ---- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.2em 0;
+}
+caption {
+  text-align: left;
+  font-weight: bold;
+  color: #14512f;
+  padding: 0.3em 0 0.6em;
+}
+th,
+td {
+  border: 1px solid #cbc4b2;
+  padding: 0.5em 0.7em;
+  text-align: left;
+  vertical-align: top;
+}
+thead th {
+  background: #1f6f43;
+  color: #ffffff;
+}
+tbody th {
+  background: #eef3ea;
+}
+
+/* ---- Forms ---- */
+form {
+  margin: 1.2em 0;
+}
+fieldset {
+  border: 1px solid #c9c2b0;
+  border-radius: 6px;
+  margin: 1.2em 0;
+  padding: 0.6em 1em 1em;
+}
+legend {
+  font-weight: bold;
+  color: #14512f;
+  padding: 0 0.4em;
+}
+fieldset p {
+  margin: 0.5em 0;
+}
+label {
+  display: block;
+  font-weight: bold;
+  margin: 0.6em 0 0.25em;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.5em 0.6em;
+  border: 1px solid #a9a394;
+  border-radius: 4px;
+  background: #ffffff;
+  font: inherit;
+  color: inherit;
+}
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+  display: inline;
+  font-weight: normal;
+}
+.hint {
+  display: block;
+  margin: 0.25em 0 0;
+  color: #6a6a5f;
+  font-size: 0.88em;
+  font-weight: normal;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: 3px solid #8fc7a5;
+}
+button[type="submit"] {
+  background: #1f6f43;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.6em 1.6em;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 0.8em;
+}
+button[type="submit"]:hover {
+  background: #14512f;
+}
+
+/* ---- Footer ---- */
+footer {
+  background: #14512f;
+  color: #dfe9e1;
+  text-align: center;
+  margin-top: 2.5em;
+  padding: 1.5em 1em;
+  font-size: 0.95em;
+}
+footer a {
+  color: #cde8d6;
+}
+footer a:hover {
+  color: #ffffff;
+}
+footer address {
+  font-style: normal;
+  margin: 0.3em 0;
+}
+footer p {
+  margin: 0.4em 0;
+}
